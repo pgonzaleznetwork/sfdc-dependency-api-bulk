@@ -1,0 +1,16 @@
+{
+  "name": "sfdc-dependency-api-bulk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node examples/example.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "node-fetch": "2.6.1",
+    "sfdc-happy-api": "2.4.0"
+  },
+  "author": "Pablo Gonzalez <pgonzaleznetwork@gmail.com>",
+  "license": "ISC"
+}
