@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "node-fetch": "2.6.1",
-    "sfdc-happy-api": "2.4.0"
+    "sfdc-happy-api": "2.5.0"
   },
   "author": "Pablo Gonzalez <pgonzaleznetwork@gmail.com>",
   "license": "ISC"
