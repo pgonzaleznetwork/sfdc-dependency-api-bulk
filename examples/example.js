@@ -7,7 +7,7 @@ let fs = require('fs');
 * @apiVersion the version of the Salesforce API. If not specified or if it's lower than 49.0, we use 49.0 by default
 */
 let connection = {
-    token: '00D3h000005XLUw!AQkAQAsS8bQCgcZb5Nr05ekdB79FrNmbWL6Dsxjb5nAma1KNSDORae6fcPFnh4zpiTytVsPMpGnbca7YiZxryG49u1AfPYXf',
+    token: '00D3h000005XLUw!AQkAQBDRY9H_CKC.nq_OnLvn_cQB8BAawUSy2.pauTnPdIzEFtNmXfd5Iu9QuqzP7T4bj2VfOBhA5vkUVHh_9sD632.FvKSK',
     url:'https://brave-raccoon-mm7crl-dev-ed.my.salesforce.com',
     apiVersion:'50.0'
 };
@@ -33,21 +33,9 @@ let jobStatus;
 async function example(){
 
     let result = await bulkDependency.getUsage(ids,connection);
-    console.log(result);
-
-    /*try {
-        jobId = await bulkDependency.submitJob(ids,connection);
-        console.log(`Job Id ${jobId}`);
-    } catch (error) {
-        console.error('Failed to submit bulk API job',error);
-    }
-    
-    try {
-        jobStatus = await bulkDependency.checkJobStatus(jobId,connection);
-        console.log(`Job Status ${jobStatus}`)
-    } catch (error) {
-        console.error(`Failed to check job status for job ${jobStatus}`);
-    }*/
+    console.log(JSON.stringify(result.datatable));
+   
 }
 
 example();
+
